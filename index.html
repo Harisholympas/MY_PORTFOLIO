@@ -3,83 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="harish.css">
+    <title>Harish's Project Portfolio</title>
+    <link rel="stylesheet" href="styels.css">
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
-        
-        <main class="content">
-            <section id="home" class="fullpage">
-                <h1>Harish T</h1>
-                <p class="designation"></p>
-            </section>
-            
-            <section id="skills" class="fullpage container-effect">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>CNN (Convolutional Neural Networks)</li>
-                    <li>NLP (Natural Language Processing)</li>
-                    <li>CV (Computer Vision)</li>
-                    <li>ML (Machine Learning)</li>
-                    <li>Python Programming (Expert)</li>
-                    <li>JAVA Programming (Intermediate)</li>
-                    <li>Presentation Skills (Expert)</li>
-                    <li>Leadership</li>
-                    <li>Teamwork</li>
-                </ul>
-            </section>
-            
-            <section id="projects" class="fullpage">
-                <h2>Projects</h2>
-                <div class="projects-container">
-                    <div class="project container-effect">
-                        <h3>Agriculture Management System</h3>
-                        <p>Mar 2024 - Apr 2024</p>
-                        <p>Developed a robust software solution leveraging AI to optimize resource allocation, monitor crop health, and manage pests and diseases, significantly enhancing sustainable farming practices and food security. Used ML algorithms to analyze soil health, weather patterns, and crop conditions, resulting in a significant increase in crop yield efficiency and a notable reduction in resource wastage.</p>
-                    </div>
-                    <div class="project container-effect">
-                        <h3>Weapon Detection System</h3>
-                        <p>Jun 2024 - Aug 2024</p>
-                        <p>Developed a robust AI-based system utilizing advanced computer vision techniques to detect and classify potential weapon threats in real-time, enhancing security measures in public spaces and high-risk environments. Leveraged the YOLO architecture for efficient object detection, achieving over 95% accuracy in identifying various weapon types, significantly improving response times and situational awareness for security personnel.</p>
-                    </div>
-                    <div class="project container-effect">
-                        <h3>Smart Case Management</h3>
-                        <p>Sept 2024 - Present</p>
-                        <p>Created a comprehensive software platform utilizing AI to streamline case management processes, improving efficiency, accuracy, and decision-making in legal and administrative workflows. Integrated NLP and advanced data analytics to automate document analysis, case categorization, and information retrieval, reducing manual effort by 40% and enhancing case resolution speed by 30%.</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="about" class="fullpage container-effect">
-                <h2>About Me</h2>
-                <p>As a passionate Artificial Intelligence and Machine Learning Engineer, I bring a wealth of experience in developing cutting-edge solutions using state-of-the-art technologies. My expertise spans across various domains of AI, including deep learning, computer vision, and natural language processing.</p>
-                <p>With a strong foundation in Python, Java, and C, I've successfully implemented complex algorithms and models that have significantly improved efficiency and accuracy in diverse applications. My work in agriculture management, security systems, and legal tech demonstrates my ability to apply AI solutions to real-world problems, driving innovation and delivering tangible results.</p>
-                <p>I'm committed to continuous learning and staying at the forefront of AI advancements. My strong problem-solving skills, coupled with my ability to collaborate effectively in team environments, allow me to tackle challenging projects and deliver high-quality solutions. I'm always eager to explore new opportunities where I can leverage my skills to create impactful AI-driven systems and contribute to the ever-evolving field of technology.</p>
-            </section>
-            
-            <section id="contact" class="fullpage container-effect">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:harisholympas@gmail.com">harisholympas@gmail.com</a></p>
-                    <p>LinkedIn: <a href="www.linkedin.com/in/harish-t-80b406291" target="_blank">Harish Thiruvalarselvam</a></p>
-                    <p>Contact: +919047996565</p>
-                </div>
-            </section>
-        </main>
+        <!-- Main Portfolio View -->
+        <div id="portfolio-view">
+            <h1 class="title">Harish's Project Portfolio</h1>
+
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="All">All</button>
+                <button class="tab-trigger" data-tab="Computer Vision">Computer Vision</button>
+                <button class="tab-trigger" data-tab="Healthcare AI">Healthcare AI</button>
+                <button class="tab-trigger" data-tab="Robotics">Robotics</button>
+                <button class="tab-trigger" data-tab="Sustainability">Sustainability</button>
+                <button class="tab-trigger" data-tab="Green Tech">Green Tech</button>
+                <button class="tab-trigger" data-tab="Wildlife Conservation">Wildlife Conservation</button>
+            </div>
+
+            <div id="project-grid" class="project-grid">
+                <!-- Project cards will be dynamically inserted here -->
+            </div>
+
+            <div class="resume-section">
+                <a class="resume-btn">View Resume</a>
+            </div>
+        </div>
+
+        <!-- Project Detail Views -->
+        <div id="project-details">
+            <!-- Project detail pages will be dynamically inserted here -->
+        </div>
     </div>
-    
-    <script src="document.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
